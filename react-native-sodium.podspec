@@ -5,8 +5,8 @@ package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 Pod::Spec.new do |s|
   s.name         = "RCTSodium"
   s.version      = package['version']
-  s.summary      = "A React Native library for authenticating users with Touch ID"
-  s.homepage     = "https://github.com/naoufal/react-native-touch-id"
+  s.summary      = package['description']
+  s.homepage     = "https://github.com/lyubo/react-native-sodium"
   s.license      = "MIT"
 
   s.author         = package['author']
